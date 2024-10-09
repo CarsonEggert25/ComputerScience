@@ -68,3 +68,87 @@ if input_question2 == real_answer2:
     print("correct answer")
 else:
     print("wrong answer")
+
+# string functions
+# A group of like-functions that munipulate strings
+# modify strings
+# super easy and convenient to use
+# python would really not be fun without them
+    
+#   .lower()
+# converts a string to all lowercase
+# no matter what the input casing is, it is converted to lowercase
+# and the answer is lowercase
+input_answer = "Lord Of The Rings"
+input_answer = input_answer.lower() #converts to lord of he rings
+real_answer = "lord of the rings"
+print(input_answer == real_answer)
+
+# .upper()
+# coverts a string to uppercase!
+x = "hello world".upper()
+print(x)    # prints HELLO WORLD
+
+# .capitalize
+# converts to lowercase, then capitalizes the first letter 
+y = "HeLlO wOrLd".capitalize()
+print(y)        # print "hello world"
+
+# .title()
+# converts a string to a titlecase
+#capital first letters of words
+z = "HeLlo world".title()
+print(z)
+
+#.swapcse
+#it intverts the casing of each character
+q = "HeLlo WoRld".swapcase()
+print(q)
+
+
+x = 0
+
+if x > 0:
+    print("x is a positive number!")
+
+elif x < 0:     #elif statements are always paired to an if 
+    print("x is a negative number!")
+
+else:       #else statements are always paired to an if statements 
+            #else statements never take a condition 
+    print("x is a zero")
+
+
+color = input("what color is the light")
+
+if color.lower == "green":      #only one if 
+    print("go")
+
+elif color.lower == "red":      # No limit to how many elifs you can use
+    print("stop")
+
+elif color.lower() == "yellow":
+    print("stop if safe")
+
+else:                               # only one else
+    print("call the police")
+
+# why do i even need elif statements???
+# Can't I just use more if's?
+    
+x = 10
+
+if x > 5:
+    print("x is greater than five")
+
+if x > 8:
+    print("x is greater than eight")
+
+############################
+    
+if x > 5:
+    print("x is greater than five")
+
+elif x > 8:
+    print("x is greater than eight")
+
