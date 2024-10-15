@@ -152,3 +152,65 @@ if x > 5:
 elif x > 8:
     print("x is greater than eight")
 
+# exception handling
+# write a program that asks for two numbers and adds them
+
+# if    =   try
+# else  =   except
+def divide_two_numbers():
+    try:
+        x = int(input("whats the first number?\n>"))
+        y = int(input("whats the second number?\n>"))
+        print(x / y)
+
+    except ValueError:
+        print("please enter a number....")
+        divide_two_numbers()
+
+    except ZeroDivisionError:
+        print("cannot divide by zero")
+        divide_two_numbers()
+
+    finally:
+        print()
+
+divide_two_numbers()
+
+
+# Logical Operators    and or !
+# comparison operators > < == >= <=
+# Arithmetic operators + - / * % ** //
+
+def check_eligibility(age, exp):
+    # you must be at lest 18 years old and have 1 year of experience to be eligible
+    if age >= 18 and exp >= 1: 
+        print("you are eligible for the competition!")
+
+    elif age < 18:
+        print("you are not old enough to compete.")
+
+    elif exp < 1:
+        print("you dont have enough experience to compete.")
+
+a = int(input("how old are you?\n>"))
+e = int(input("How many years of expirence do you have?\n>"))
+
+check_eligibility(a, e)
+
+
+# Advanced logical operators
+# Amazon Free shipping eligiblity system
+# Prime customers OR purchases over $25
+# under 18, you need parent consent to purchase
+
+def Free_shipping(prime, cost, age, consent):
+    if (prime == True or cost >= 25) and (age >= 18 or consent == True):
+        print("free shipping applied!")
+
+p = False
+cos = 100
+a = 12
+con = True
+
+Free_shipping(p. cos, a, con)
+
